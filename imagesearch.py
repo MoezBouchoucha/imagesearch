@@ -88,7 +88,6 @@ class ImageSearchEngine:
                 print(f"Query {i + 1}:")
                 for idx,neighbor_idx in enumerate(neighbors):
                     print(f"  Nearest neighbor index: {neighbor_idx}, File path: {self.metadata[neighbor_idx]}, Distance: {D[0][idx]}")
-                    # print(f"  Nearest neighbor index: {neighbor_idx}, Distance: {D[0][idx]}")
         return D , I
 
     def save(self, base_path: Union[str, Path]) -> None:
